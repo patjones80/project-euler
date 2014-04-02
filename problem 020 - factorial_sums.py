@@ -25,7 +25,7 @@ max_order = order_of(f)
 num = f
 f_sum = 0
 
-for j in range(max_order, -1, -1):           # start with the highest power of 10 to get the first digit, then work down
+for j in range(max_order, -1, -1):          # start with the highest power of 10 to get the first digit, then work down
  
     f_sum = f_sum + num // 10**j            # add the j-th digit to the running sum
     num = num % 10**j                       # this essentially peels the first digit off the sequence
