@@ -1,0 +1,26 @@
+
+Public Sub EnumerateDates()
+
+Dim intDaysTotal As Double
+Dim dte As Date
+Dim j As Double
+Dim iTotal As Double
+
+intDaysTotal = DateDiff("d", #1/1/1901#, #12/31/2000#)
+dte = #1/1/1901#
+iTotal = 0
+
+For j = 0 To intDaysTotal
+    
+    dte = DateAdd("d", 1, dte)
+    
+    If Weekday(dte, vbSunday) = 1 And DatePart("d", dte, vbSunday) = 1 Then
+        iTotal = iTotal + 1
+        Debug.Print iTotal & ": " & dte
+    End If
+    
+Next j
+
+Debug.Print "total sundays: " & iTotal
+
+End Sub
