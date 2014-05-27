@@ -1,5 +1,4 @@
 
-
 # project euler 30
 
 # these numbers turn out to be related to "narcissistic numbers"
