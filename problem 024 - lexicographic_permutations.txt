@@ -1,0 +1,52 @@
+
+0 _ _ _ _ _ _ _ _ _	= 362,880 combinations
+1 _ _ _ _ _ _ _ _ _	= 362,880 combinations
+
+Thus, when all the combinations starting in 0 or 1 are sorted, the list will come out to only 725,760 long, so we go to 2:
+
+2 _ _ _ _ _ _ _ _ _
+
+Taking all the combinations starting with 2 would put us over a million, so what if we start with 2 0 ?
+
+2 0 _ _ _ _ _ _ _ _	=  40,320 combinations
+
+All of the 2 0 combinations get us to 766,080.
+
+2 1 _ _ _ _ _ _ _ _	=  40,320 combinations (806,400)
+2 3 _ _ _ _ _ _ _ _	=  40,320 combinations (846,720)
+2 4 _ _ _ _ _ _ _ _	=  40,320 combinations (887,040)
+2 5 _ _ _ _ _ _ _ _	=  40,320 combinations (927,360)
+2 6 _ _ _ _ _ _ _ _	=  40,320 combinations (967,680)	
+
+All of the 2 6 combinations bring the total to 967,680...we still fall short, so we go to 2 7:
+
+2 7 _ _ _ _ _ _ _ _
+
+However, all of the 2 7 combinations would give us 1,008,000 - a little too much. Let's try 2 7 0:
+
+2 7 0 _ _ _ _ _ _ _	=   5,040 combinations (972,720)
+2 7 1 _ _ _ _ _ _ _	=   5,040 combinations (977,760)
+2 7 3 _ _ _ _ _ _ _	=   5,040 combinations (982,800)
+2 7 4 _ _ _ _ _ _ _	=   5,040 combinations (987,840)
+2 7 5 _ _ _ _ _ _ _	=   5,040 combinations (992,880)
+2 7 6 _ _ _ _ _ _ _	=   5,040 combinations (997,920)
+
+We can see that all of 2 7 8 will put us over, so we go to 2 7 8 0:
+
+2 7 8 0 _ _ _ _ _ _ 	=     720 combinations	(998,640)
+2 7 8 1 _ _ _ _ _ _ 	=     720 combinations	(999,360)
+
+Continuing with the same reasoning:
+
+2 7 8 3 0 _ _ _ _ _	=     120 combinations	(999,480)
+2 7 8 3 1 _ _ _ _ _	=     120 combinations  (999,600)
+2 7 8 3 4 _ _ _ _ _	=     120 combinations	(999,720)
+2 7 8 3 5 _ _ _ _ _	=     120 combinations	(999,840)
+2 7 8 3 6 _ _ _ _ _	=     120 combinations	(999,960)
+2 7 8 3 9 0 _ _ _ _	=      24 combinations	(999,984)
+2 7 8 3 9 1 0 _ _ _	=       6 combinations  (999,990)
+2 7 8 3 9 1 4 _ _ _	=       6 combinations	(999,996)
+2 7 8 3 9 1 5 0 _ _     = 	2 combinations	(999,998)
+2 7 8 3 9 1 5 4 0 6				(999,999)
+2 7 8 3 9 1 5 4 6 0
+
